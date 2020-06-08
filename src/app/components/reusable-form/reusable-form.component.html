@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-lg-12">
+    <form [formGroup]="myForm">
+      <div class="form-group">
+        <div class="form-row">
+          <label for="eventTitle">Title</label>
+          <input type="text" class="form-control" id="eventTitle" [formControl]="myForm.controls['title']"
+            aria-describedby="eventTitleHelp">
+          <small id="eventTitleHelp" class="form-text text-muted">Title of the event.</small>
+        </div>
+        <div class="form-row">
+          <label for="eventStart">Start date</label>
+          <input type="text" class="form-control" id="eventStart" [formControl]="myForm.controls['start']"
+            aria-describedby="eventStartHelp">
+          <small id="eventStartHelp" class="form-text text-muted">Start date of the event.</small>
+        </div>
+        <div class="form-row">
+          <label for="eventIsAllDay">All day</label>
+          <input type="checkbox" class="form-control" id="eventIsAllDay" [formControl]="myForm.controls['allDay']"
+            aria-describedby="eventIsAllDayHelp">
+          <small id="eventIsAllDayHelp" class="form-text text-muted">Is all day event or not.</small>
+        </div>
+        <div class="form-row">
+          <label for="eventEnd">End date</label>
+          <input type="text" class="form-control" id="eventEnd" [formControl]="myForm.controls['end']"
+            aria-describedby="eventEndHelp">
+          <small id="eventEndHelp" class="form-text text-muted">End date of the event.</small>
+        </div>
+        <div class="form-row">
+          <label for="eventDescription">Description</label>
+          <input type="text" class="form-control" id="eventDescription" [formControl]="myForm.controls['meta']"
+            aria-describedby="eventDescriptionHelp">
+          <small id="eventDescriptionHelp" class="form-text text-muted">EDescription of the event.</small>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <button type="button" class="btn btn-primary" (click)="add()">Add</button>
+    <button type="button" class="btn btn-secondary" (click)="reset()">Reset</button>
+    <button type="button" class="btn btn-success" (click)="update()">Update</button>
+  </div>
+</div>

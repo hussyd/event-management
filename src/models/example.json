@@ -1,0 +1,21 @@
+[{
+    "title": "Engineering Interview",
+    "location": "A/III",
+    "startDate": 1562001060000,
+    "endDate": 1562001240000,
+    "isAllDay": false
+  },
+  {
+    "title": "Frontend Conference",
+    "location": "Offsite",
+    "startDate": 1548975600000,
+    "isAllDay": true
+  },
+  {
+    "title": "Sprint Planning",
+    "location": "C/I",
+    "startDate": 1561978800000,
+    "endDate": 1561986000000,
+    "isAllDay": false
+  }
+]
